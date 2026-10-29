@@ -1,0 +1,1366 @@
+{
+  "schemaVersion": 1,
+  "runId": "s02-run-a",
+  "createdAt": "2026-10-20T10:00:00.000Z",
+  "tool": {
+    "name": "local-model-picker",
+    "version": "0.1.0"
+  },
+  "runtime": "mock",
+  "synthetic": true,
+  "seed": null,
+  "remote": false,
+  "endpointKind": "mock",
+  "runtimeInfo": {
+    "ollamaVersion": "0.5.7"
+  },
+  "fingerprint": {
+    "source": "mock",
+    "scopeId": "mock-v1",
+    "cpuModel": "Mock CPU 8-core (synthetic)",
+    "cpuThreads": 16,
+    "ramBytes": 34359738368,
+    "os": {
+      "platform": "mock",
+      "release": "mock-v1"
+    },
+    "gpu": {
+      "vendor": "nvidia",
+      "name": "Mock GPU 8 GB (synthetic)",
+      "vramTotalBytes": 8589934592,
+      "unifiedMemory": false
+    },
+    "canonical": {
+      "source": "mock",
+      "scopeId": "mock-v1",
+      "cpuModel": "Mock CPU 8-core (synthetic)",
+      "cpuThreads": 16,
+      "ramGiB": 32,
+      "platform": "mock",
+      "gpuVendor": "nvidia",
+      "gpuName": "Mock GPU 8 GB (synthetic)",
+      "vramGiB": 8
+    },
+    "hash": "2283e944aeb8"
+  },
+  "availableMemory": {
+    "vramFreeBytes": 7516192768,
+    "ramFreeBytes": 21474836480,
+    "source": "mock",
+    "at": "2026-10-20T10:00:00.000Z"
+  },
+  "itemSetHash": "5332a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+  "itemIds": [
+    "num-01",
+    "num-02",
+    "num-03",
+    "num-04",
+    "num-05",
+    "num-06",
+    "num-07",
+    "num-08",
+    "num-09",
+    "num-10",
+    "choice-01",
+    "choice-02",
+    "choice-03",
+    "choice-04",
+    "choice-05",
+    "choice-06",
+    "choice-07",
+    "choice-08",
+    "inst-01",
+    "inst-02",
+    "inst-03",
+    "inst-04",
+    "inst-05",
+    "inst-06",
+    "extr-01",
+    "extr-02",
+    "extr-03",
+    "extr-04",
+    "extr-05",
+    "extr-06"
+  ],
+  "graderVersion": "graders-v1",
+  "protocol": {
+    "promptSetHash": "5332b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+    "temperature": 0,
+    "seed": 42,
+    "numCtx": 4096,
+    "numPredict": 512,
+    "think": "default",
+    "repeats": 3,
+    "warmups": 1,
+    "redactionVersion": "redact-v1",
+    "itemSetComplete": true,
+    "caps": {
+      "metadataTimeoutMs": 10000,
+      "headerTimeoutMs": 30000,
+      "genTimeoutMs": 300000,
+      "ndjsonLineBytes": 262144,
+      "streamBytes": 1048576,
+      "rawChars": 8000
+    }
+  },
+  "protocolHash": "5332c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3",
+  "flags": [
+    "Bundled MOCK sample derived from s02-gap-inside-noise.json; not a hardware measurement."
+  ],
+  "warnings": [],
+  "candidates": [
+    {
+      "candidate": {
+        "key": "qwen2.5:3b-instruct-q8_0@020abcdef012",
+        "tag": "qwen2.5:3b-instruct-q8_0",
+        "digest": "020abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456",
+        "family": "qwen2",
+        "parameterSize": "3.1B",
+        "quantization": "Q8_0",
+        "sizeBytes": 3290000000
+      },
+      "status": "measured",
+      "statusReason": null,
+      "speed": [
+        {
+          "promptId": "long-gen",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 260,
+          "ttfaMs": 260,
+          "loadMs": 1500,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 9481.481,
+          "genTokPerSec": 27,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 9481481000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 196,
+          "ttfaMs": 196,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 8707.483,
+          "genTokPerSec": 29.4,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 8707483000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 200,
+          "ttfaMs": 200,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 8533.333,
+          "genTokPerSec": 30,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 8533333000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 204,
+          "ttfaMs": 204,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 8366.013,
+          "genTokPerSec": 30.6,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 8366013000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 260,
+          "ttfaMs": 260,
+          "loadMs": 1500,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 8619.529,
+          "genTokPerSec": 29.7,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 8619529000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 196,
+          "ttfaMs": 196,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 7915.894,
+          "genTokPerSec": 32.34,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7915894000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 200,
+          "ttfaMs": 200,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 7757.576,
+          "genTokPerSec": 33,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7757576000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 204,
+          "ttfaMs": 204,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 7605.466,
+          "genTokPerSec": 33.66,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7605466000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 260,
+          "ttfaMs": 260,
+          "loadMs": 1500,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 7901.235,
+          "genTokPerSec": 32.4,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7901235000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 196,
+          "ttfaMs": 196,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 7256.236,
+          "genTokPerSec": 35.28,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7256236000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 200,
+          "ttfaMs": 200,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 7111.111,
+          "genTokPerSec": 36,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 7111111000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 204,
+          "ttfaMs": 204,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 6971.678,
+          "genTokPerSec": 36.72,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 6971678000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        }
+      ],
+      "memory": [
+        {
+          "phase": "after-load",
+          "sizeBytes": 3900000000,
+          "sizeVramBytes": 3900000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 3900000000,
+          "sizeVramBytes": 3900000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 3900000000,
+          "sizeVramBytes": 3900000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 3900000000,
+          "sizeVramBytes": 3900000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        }
+      ],
+      "nvidiaPeakBytes": null,
+      "items": [
+        {
+          "itemId": "num-01",
+          "raw": "Synthetic response for num-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-02",
+          "raw": "Synthetic response for num-02 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-03",
+          "raw": "Synthetic response for num-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-04",
+          "raw": "Synthetic response for num-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-05",
+          "raw": "Synthetic response for num-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-06",
+          "raw": "Synthetic response for num-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-07",
+          "raw": "Synthetic response for num-07 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-08",
+          "raw": "Synthetic response for num-08 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-09",
+          "raw": "Synthetic response for num-09 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-10",
+          "raw": "Synthetic response for num-10 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-01",
+          "raw": "Synthetic response for choice-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-02",
+          "raw": "Synthetic response for choice-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-03",
+          "raw": "Synthetic response for choice-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-04",
+          "raw": "Synthetic response for choice-04 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-05",
+          "raw": "Synthetic response for choice-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-06",
+          "raw": "Synthetic response for choice-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-07",
+          "raw": "Synthetic response for choice-07 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-08",
+          "raw": "Synthetic response for choice-08 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-01",
+          "raw": "Synthetic response for inst-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-02",
+          "raw": "Synthetic response for inst-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-03",
+          "raw": "Synthetic response for inst-03 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": false,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-04",
+          "raw": "Synthetic response for inst-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-05",
+          "raw": "Synthetic response for inst-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-06",
+          "raw": "Synthetic response for inst-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-01",
+          "raw": "Synthetic response for extr-01 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-02",
+          "raw": "Synthetic response for extr-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-03",
+          "raw": "Synthetic response for extr-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-04",
+          "raw": "Synthetic response for extr-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-05",
+          "raw": "Synthetic response for extr-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-06",
+          "raw": "Synthetic response for extr-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        }
+      ],
+      "wallClockMs": 180000,
+      "loadedByRun": true
+    },
+    {
+      "candidate": {
+        "key": "qwen2.5:3b-instruct-q4_K_M@021abcdef012",
+        "tag": "qwen2.5:3b-instruct-q4_K_M",
+        "digest": "021abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456",
+        "family": "qwen2",
+        "parameterSize": "3.1B",
+        "quantization": "Q4_K_M",
+        "sizeBytes": 1930000000
+      },
+      "status": "measured",
+      "statusReason": null,
+      "speed": [
+        {
+          "promptId": "long-gen",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 182,
+          "ttfaMs": 182,
+          "loadMs": 1500,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 5470.085,
+          "genTokPerSec": 46.8,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 5470085000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 137.2,
+          "ttfaMs": 137.2,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 5023.548,
+          "genTokPerSec": 50.96,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 5023548000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 140,
+          "ttfaMs": 140,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4923.077,
+          "genTokPerSec": 52,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4923077000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-gen",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 142.8,
+          "ttfaMs": 142.8,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4826.546,
+          "genTokPerSec": 53.04,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4826546000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 182,
+          "ttfaMs": 182,
+          "loadMs": 1500,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 4972.805,
+          "genTokPerSec": 51.48,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4972805000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 137.2,
+          "ttfaMs": 137.2,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 4566.536,
+          "genTokPerSec": 56.06,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4566536000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 140,
+          "ttfaMs": 140,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 4475.524,
+          "genTokPerSec": 57.2,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4475524000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "long-prompt",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 142.8,
+          "ttfaMs": 142.8,
+          "loadMs": 0,
+          "promptEvalCount": 900,
+          "promptEvalMs": 300,
+          "evalCount": 256,
+          "evalMs": 4388.07,
+          "genTokPerSec": 58.34,
+          "promptTokPerSec": 3000,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4388070000,
+            "load_duration": 0,
+            "prompt_eval_count": 900,
+            "prompt_eval_duration": 300000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 0,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 182,
+          "ttfaMs": 182,
+          "loadMs": 1500,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4558.405,
+          "genTokPerSec": 56.16,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4558405000,
+            "load_duration": 1500000000,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 1,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 137.2,
+          "ttfaMs": 137.2,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4186.427,
+          "genTokPerSec": 61.15,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4186427000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 2,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 140,
+          "ttfaMs": 140,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4102.564,
+          "genTokPerSec": 62.4,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4102564000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        },
+        {
+          "promptId": "mixed-chat",
+          "repeat": 3,
+          "valid": true,
+          "invalidReason": null,
+          "ttftMs": 142.8,
+          "ttfaMs": 142.8,
+          "loadMs": 0,
+          "promptEvalCount": 40,
+          "promptEvalMs": 25,
+          "evalCount": 256,
+          "evalMs": 4021.995,
+          "genTokPerSec": 63.65,
+          "promptTokPerSec": 1600,
+          "thinkingObserved": false,
+          "usageRaw": {
+            "eval_count": 256,
+            "eval_duration": 4021995000,
+            "load_duration": 0,
+            "prompt_eval_count": 40,
+            "prompt_eval_duration": 25000000
+          }
+        }
+      ],
+      "memory": [
+        {
+          "phase": "after-load",
+          "sizeBytes": 2500000000,
+          "sizeVramBytes": 2500000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 2500000000,
+          "sizeVramBytes": 2500000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 2500000000,
+          "sizeVramBytes": 2500000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        },
+        {
+          "phase": "after-repeat",
+          "sizeBytes": 2500000000,
+          "sizeVramBytes": 2500000000,
+          "offloadFraction": 1,
+          "source": "api/ps"
+        }
+      ],
+      "nvidiaPeakBytes": null,
+      "items": [
+        {
+          "itemId": "num-01",
+          "raw": "Synthetic response for num-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-02",
+          "raw": "Synthetic response for num-02 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-03",
+          "raw": "Synthetic response for num-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-04",
+          "raw": "Synthetic response for num-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-05",
+          "raw": "Synthetic response for num-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-06",
+          "raw": "Synthetic response for num-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-07",
+          "raw": "Synthetic response for num-07 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-08",
+          "raw": "Synthetic response for num-08 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-09",
+          "raw": "Synthetic response for num-09 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "num-10",
+          "raw": "Synthetic response for num-10 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "numeric-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-01",
+          "raw": "Synthetic response for choice-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-02",
+          "raw": "Synthetic response for choice-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-03",
+          "raw": "Synthetic response for choice-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-04",
+          "raw": "Synthetic response for choice-04 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-05",
+          "raw": "Synthetic response for choice-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-06",
+          "raw": "Synthetic response for choice-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-07",
+          "raw": "Synthetic response for choice-07 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "choice-08",
+          "raw": "Synthetic response for choice-08 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "choice-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-01",
+          "raw": "Synthetic response for inst-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-02",
+          "raw": "Synthetic response for inst-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-03",
+          "raw": "Synthetic response for inst-03 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": false,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-04",
+          "raw": "Synthetic response for inst-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-05",
+          "raw": "Synthetic response for inst-05 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "inst-06",
+          "raw": "Synthetic response for inst-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": null,
+          "correct": true,
+          "graderId": "ifcheck-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-01",
+          "raw": "Synthetic response for extr-01 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-02",
+          "raw": "Synthetic response for extr-02 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-03",
+          "raw": "Synthetic response for extr-03 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-04",
+          "raw": "Synthetic response for extr-04 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-05",
+          "raw": "Synthetic response for extr-05 (does not match the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "other",
+          "correct": false,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        },
+        {
+          "itemId": "extr-06",
+          "raw": "Synthetic response for extr-06 (matches the expected answer).",
+          "truncated": false,
+          "flags": [],
+          "extracted": "expected",
+          "correct": true,
+          "graderId": "extract-v1",
+          "graderVersion": "graders-v1"
+        }
+      ],
+      "wallClockMs": 180000,
+      "loadedByRun": true
+    }
+  ],
+  "rulings": []
+}

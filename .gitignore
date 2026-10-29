@@ -1,0 +1,22 @@
+node_modules/
+dist/
+dist-cli/
+out/
+.env
+.env.*
+!.env.example
+*.log
+
+# Local credentials and generated artifacts
+.creds/
+ArchiveManager-creds.txt
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.7z
+*.tar
+*.tar.gz
+.cache/
+coverage/

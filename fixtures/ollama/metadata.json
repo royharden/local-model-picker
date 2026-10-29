@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "label": "Hand-authored synthetic Ollama metadata; not a live response",
+  "tags": {"models": [{"name": "fixture:8b-q4_K_M", "digest": "4141414141414141414141414141414141414141414141414141414141414141", "size": 4900000000, "details": {"family": "llama", "parameter_size": "8B", "quantization_level": "Q4_K_M", "format": "gguf"}}]},
+  "show": {"details": {"family": "llama", "parameter_size": "8B", "quantization_level": "Q4_K_M", "format": "gguf"}, "capabilities": ["completion"], "model_info": {"llama.context_length": 8192}},
+  "ps": {"models": [{"name": "fixture:8b-q4_K_M", "digest": "4141414141414141414141414141414141414141414141414141414141414141", "size": 5600000000, "size_vram": 5600000000, "expires_at": "2026-10-24T00:00:00Z"}]},
+  "psMissingVram": {"models": [{"name": "fixture:8b-q4_K_M", "digest": "4141414141414141414141414141414141414141414141414141414141414141", "size": 5600000000}]},
+  "version": {"version": "0.0.0-fixture"}
+}

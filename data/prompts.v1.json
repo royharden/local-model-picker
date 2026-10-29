@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "version": "prompts.v1",
+  "prompts": [
+    {
+      "id": "speed-long-generation",
+      "label": "Long generation: short prompt, long story output (num_predict caps the length)",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Write a long, detailed short story of about 800 words about a lighthouse keeper who discovers that the lighthouse's lamp has been signalling in a pattern no one taught it. Describe the setting, the keeper's daily routine, the discovery and what the keeper decides to do. Write in plain prose without headings or lists."
+        }
+      ]
+    },
+    {
+      "id": "speed-long-prompt",
+      "label": "Long prompt: a fixed passage of about 1,500 tokens followed by a summary request (actual token count is runtime evidence)",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Read the following passage carefully.\n\nThe river town of Merrow grew up where two old roads met at a shallow ford. For most of its early history it was a place people passed through rather than a place they stayed. Drovers brought cattle down from the hill farms in autumn, rested them in the water meadows for a night or two, and moved on toward the markets in the south. A handful of families made a living from that traffic: they kept inns, mended harness, sold bread and beer, and charged a small fee to anyone who wanted to cross the ford when the water was high. The town had no wall, no castle and no charter, and the few records that survive from that time are mostly lists of fines for blocking the road.\n\nEverything changed when a group of merchants decided to cut a canal from the coal pits in the eastern valley to the river at Merrow. The plan was simple on paper. Coal was heavy and expensive to move by cart, and the roads were deep mud for half the year. A canal would let a single horse pull a boat carrying as much coal as forty carts. The merchants raised money by selling shares, hired a surveyor who had worked on two earlier canals, and bought a strip of land twelve miles long. The surveyor warned them that the ground near Merrow was soft and that the last mile would need careful work, but the shareholders were impatient and the warning was noted and set aside.\n\nDigging began in the spring and went quickly through the eastern valley, where the soil was firm clay that held its shape. Gangs of workers moved from farm to farm, living in huts beside the cut and buying food from the villages along the route. The work was hard and dangerous. Banks collapsed after heavy rain, and the records of the canal company list injuries almost every week. Still, by the end of the second summer the canal had reached the edge of the water meadows, and the first boats were already carrying coal along the finished section to a temporary wharf.\n\nThe last mile proved the surveyor right. The meadows outside Merrow sat on a deep bed of peat and silt, and the banks of the new cut kept slumping into the channel. The engineers tried lining the channel with clay, then with timber, then with a mixture of both. Each method worked for a few weeks and then failed. Water leaked through the banks into the surrounding fields, flooding farms that had never flooded before, and the farmers took the company to court. The company lost two cases in a row and had to pay for drains, new fences and the loss of a year of hay.\n\nIn the end the problem was solved by a local builder named Ellen Harrow, who had spent years repairing the river walls in town. She suggested driving long wooden piles deep into the peat until they reached the gravel underneath, and then building the canal banks on a platform resting on those piles. The idea was expensive and slow, and the company directors argued about it for months. Harrow offered to build a short trial section at her own risk. When that section survived a wet winter without moving, the directors gave in, and she was put in charge of the last mile.\n\nThe canal opened fully four years after digging had begun. The effect on Merrow was immediate. Coal that had cost a small fortune to bring into town became cheap, and with cheap coal came industry. A brewery expanded, a glassworks opened beside the basin, and a pottery began using the canal to bring in clay from the south and send out finished plates and jars. The population of the town doubled within a generation. Rows of narrow brick houses spread across the old drovers' fields, and the ford that had given the town its first purpose was replaced by a stone bridge.\n\nNot everyone welcomed the change. The innkeepers who had served the drovers found their trade disappearing as cattle began to travel by other routes. The water meadows, once common grazing, were enclosed and sold for building. Smoke from the glassworks hung over the town on still days, and the river below the basin turned grey with waste from the pottery. Letters to the local newspaper from that period complain about noise, dirt and the number of strangers in the streets. Some of those letters read almost exactly like complaints about new industry written in other places and other centuries.\n\nThe canal's best years lasted about half a century. Then a railway line was built along the valley, following almost the same route. Trains were faster than boats and did not freeze in winter. The canal company cut its tolls again and again to keep its customers, but one by one the factories moved their freight to the railway. The glassworks closed, the brewery switched to rail, and the boats that remained carried only cheap, bulky loads that were not worth sending by train. Eventually the company sold the canal to the railway, which kept it open for a few more years and then let it silt up.\n\nFor a long time afterwards the canal was treated as an eyesore. Parts of it were filled in to make room for roads, and the basin in Merrow became a car park. The wooden piles under Harrow's last mile, sealed in wet peat, survived untouched. When a group of volunteers began clearing the remaining channel many decades later, they found the piles almost as sound as the day they had been driven. Engineers who examined them were surprised; they had expected the timber to have rotted long ago. The peat that had caused so much trouble had, in the end, preserved the solution.\n\nToday the restored canal carries pleasure boats rather than coal. The towpath is a popular route for walkers and cyclists, and a small museum near the old basin tells the story of the town's rise and fall as an industrial centre. One display explains how Harrow's piles were driven, using a model that visitors can operate. Another shows a section of the original clay lining that failed, with a label explaining why. The museum's guides like to point out that the town owes its shape to a problem that was solved by someone who was not an engineer, who took a risk with her own money, and who was nearly ignored.\n\nHistorians who study Merrow often use it as an example of how infrastructure changes a place in ways that its builders did not plan. The merchants who paid for the canal wanted cheaper coal for their own businesses. They did not set out to build a factory town, to end the drovers' trade, or to enclose the meadows. Nor did the railway builders intend to turn the canal into a ruin that would one day become a park. Each decision made sense at the time to the people who made it, and each one left behind something that later generations had to live with, repair or reinvent.\n\nSummarize the passage in exactly five bullet points, one sentence each. Then state in one sentence what the passage suggests about how infrastructure changes a place."
+        }
+      ]
+    },
+    {
+      "id": "speed-mixed-chat",
+      "label": "Mixed chat: system prompt and a short multi-turn conversation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a concise, friendly assistant who helps people plan their week. Answer in plain text."
+        },
+        {
+          "role": "user",
+          "content": "I have three deadlines this week: a report on Tuesday, a presentation on Thursday and a budget review on Friday. Where should I start?"
+        },
+        {
+          "role": "assistant",
+          "content": "Start with the report, since it is due first. Block two focused sessions on Monday for it, and use any time left on Monday evening to outline the presentation."
+        },
+        {
+          "role": "user",
+          "content": "Good idea. I also have a dentist appointment on Wednesday morning and I want to go running at least twice. Can you lay out a simple day-by-day plan from Monday to Friday, and explain briefly why you ordered things that way?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+Local Model Picker
+Copyright (c) 2026 Roy Harden
+Licensed under the MIT License (see LICENSE).
+
+This project re-implements ideas from the projects below in its own TypeScript code.
+No source code was copied from any of them.
+
+Ideas and attributions
+----------------------
+
+llmfit (MIT License)
+  The quantisation walk-down order (QUANT_HIERARCHY, best quant for a memory budget) used by
+  the "llmfit-style installed-only weights estimate" baseline, and labelling every figure as
+  measured versus estimated. Our baseline is weights-only and is not a faithful llmfit replica.
+
+dalist1/ollama-bench (MIT License)
+  Deterministic benchmark settings (fixed seed, capped tokens), client-side time to first
+  token, and first-answer latency for thinking models.
+
+rockyRunnr/ollama-bench (MIT License)
+  Saving raw JSON results and comparing runs; use of Ollama's eval_count / eval_duration
+  fields. (Its use of process RSS as memory is deliberately not followed; /api/ps is used.)
+
+llama.cpp llama-bench (MIT License)
+  Repeated measurements with summary statistics and machine-readable output, as a shape
+  reference only.
+
+quant-sim (ideas only)
+  The overall per-quant speed + memory + quality + recommend concept and offline-by-default
+  behaviour. Its recommend rule is what this project replaces (paired test, no least-bad
+  fallback). Ideas only; no code or text used.
+
+IFEval (Apache License 2.0)
+  Jeffrey Zhou et al., "Instruction-Following Evaluation for Large Language Models" (2023).
+  Methodology inspiration for the six instruction-following items (verifiable, parameterised
+  rules), which are original items written for this project (MIT). They were not sampled from
+  IFEval; no IFEval prompts, data or code are included.
+
+mulberry32
+  Public-domain PRNG algorithm by Tommy Ettinger, re-implemented in src/core/evalkit/prng.ts.
+
+Datasets
+--------
+
+data/items.v1.json includes the exact text of 18 dataset rows, fetched on 2026-10-24 from the
+public Hugging Face datasets-server rows API (no account). Each item records its sourceId
+("<dataset>:<config>/<split>#<rowIndex>"), the dataset revision reported at fetch time, the
+request URL and the row index. The row texts are kept verbatim (GSM8K rows 0-9 of the 12 requested are used) in
+data/sources/fetched-20261024.json. Items are the question (plus lettered choices for MMLU)
+followed by a fixed answer-format instruction written for this project.
+
+GSM8K (MIT License)
+  Copyright (c) 2021 OpenAI. Karl Cobbe et al., "Training Verifiers to Solve Math Word
+  Problems" (2021). https://huggingface.co/datasets/openai/gsm8k (config main, split test,
+  rows 0-9, revision 740312add88f781978c0658806c59bc2815b9866). Expected answers are the
+  number after "####" in each row.
+
+MMLU (MIT License)
+  Copyright (c) 2020 Dan Hendrycks. Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou,
+  Mantas Mazeika, Dawn Song and Jacob Steinhardt, "Measuring Massive Multitask Language
+  Understanding" (ICLR 2021). https://huggingface.co/datasets/cais/mmlu (config all, split
+  test, rows 0, 1750, 3500, 5250, 7000, 8750, 10500, 12250, revision
+  c30699e8356da336a370243923dbaf21066bb9fe).
+
+The six instruction items, the six extraction items, the three speed prompts and the 80
+synthetic grader responses in fixtures/graders/ are original to this project (MIT).

@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "label": "Hand-authored synthetic NDJSON: never live timing evidence",
+  "cases": [
+    {"id": "warm-zero-load", "valid": true, "lines": ["{\"message\":{\"content\":\"Answer: 42\"},\"done\":false}", "{\"done\":true,\"load_duration\":0,\"prompt_eval_count\":10,\"prompt_eval_duration\":10000000,\"eval_count\":20,\"eval_duration\":1000000000}"]},
+    {"id": "cached-prompt", "valid": true, "lines": ["{\"message\":{\"content\":\"Answer: 42\"}}", "{\"done\":true,\"load_duration\":0,\"prompt_eval_count\":0,\"prompt_eval_duration\":0,\"eval_count\":20,\"eval_duration\":1000000000}"]},
+    {"id": "zero-eval-duration", "valid": false, "lines": ["{\"message\":{\"content\":\"42\"}}", "{\"done\":true,\"eval_count\":20,\"eval_duration\":0}"]},
+    {"id": "missing-done", "valid": false, "lines": ["{\"message\":{\"content\":\"42\"},\"done\":false}"]},
+    {"id": "error", "valid": false, "lines": ["{\"error\":\"synthetic failure\"}"]},
+    {"id": "negative-usage", "valid": false, "lines": ["{\"message\":{\"content\":\"42\"}}", "{\"done\":true,\"load_duration\":-1,\"eval_count\":20,\"eval_duration\":1000000000}"]},
+    {"id": "thinking-only", "valid": false, "lines": ["{\"message\":{\"thinking\":\"private synthetic reasoning\"}}", "{\"done\":true,\"eval_count\":20,\"eval_duration\":1000000000}"]},
+    {"id": "structured-thinking", "valid": true, "lines": ["{\"message\":{\"thinking\":\"synthetic reasoning\"}}", "{\"message\":{\"content\":\"42\"}}", "{\"done\":true,\"eval_count\":20,\"eval_duration\":1000000000}"]}
+  ]
+}

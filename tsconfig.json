@@ -1,0 +1,4 @@
+{
+  "//": "Editor/IDE entry point. Per-boundary checks use tsconfig.core.json (no DOM/node types), tsconfig.app.json (viewer), tsconfig.cli.json (Node CLI + scripts) and tsconfig.test.json.",
+  "extends": "./tsconfig.test.json"
+}
